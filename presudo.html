@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 가상요소</title>
+    <style>
+        a:hover{
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.4s;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            transition: 0.4s;
+        }
+        .box:hover{
+            width: 200px;
+
+        }
+        .box:active{
+            background-color: yellowgreen;
+        }
+        input{
+            display: block;
+            width: 100px;
+            margin-top: 6px;
+            outline: none;
+            border: 1px solid lightgray;
+            padding: 5px 10px;
+            transition: 0.4s;
+        }
+        input:focus{
+            border: 1px solid red;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://google.com">Google!</a>
+    <div class="box"></div>
+    <input type="text">
+    <input type="text">
+
+    
+</body>
+</html>

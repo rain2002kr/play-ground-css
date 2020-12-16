@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 캐럿 기호로 시작 하는것만 지정 */
+        [class^="btn-"]{
+            font-weight: bold;
+            border-radius: 3px;
+        } 
+        /* 달러 기호 : 끝나는 요소 지정 */
+        [class$="success"]{
+            color: blue;
+        }
+        [class$="danger"]{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="btn-success">Sucess</button>
+    <button class="btn-danger">Danger</button>
+    <button>Normal</button>
+</body>
+</html>

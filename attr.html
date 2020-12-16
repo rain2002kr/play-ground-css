@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr</title>
+    <style>
+        .disabled{
+            opacity: .2;  /* 20% */
+        }
+        [disabled] {
+            color: red;
+            opacity: .2;  /* 20% */
+            background-color: green;
+        }
+
+        [type="password"] {
+            opacity: .3;  /* 20% */
+            background-color: tomato;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    
+    <input type="text" value="HEROPY">
+    <input type="password" value="1234">
+    <input class="disabled" type="text" value="disabled text" disabled>
+</body>
+</html>
