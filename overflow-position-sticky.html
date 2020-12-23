@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow postion sticky</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 500px;
+            border: 4px dashed red;
+            margin: 50px;
+            overflow: auto;
+        }
+        .section{
+            height: 200px;
+            border: 4px dashed lightgray;
+            
+        }
+        .section h1{
+            position: sticky;
+            top:0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section section1">
+            <h1>Title1</h1>
+        </div>
+        <div class="section section2">
+            <h1>Title2</h1>
+        </div>
+        <div class="section section3">
+            <h1>Title3</h1>
+        </div>
+        <div class="section section4">
+            <h1>Title4</h1>
+        </div>
+        <div class="section section5">
+            <h1>Title5</h1>
+        </div>          
+    </div>
+
+    
+</body>
+</html>
