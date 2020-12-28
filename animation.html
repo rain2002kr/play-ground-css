@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .panel-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 10px;
+            animation: panel 3s infinite linear alternate ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .move-box {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border-radius: 10px;
+            margin: 10px;
+            animation: movemove 2s infinite linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .panel-box:hover{
+            animation-play-state: paused;
+            background-color: yellow;
+        }
+
+        .move-box::before {
+            content: "running";
+        }
+        .panel-box::before {
+            content: "running";
+        }
+
+        .move-box:hover {
+            animation-play-state: paused;
+            background-color: red;
+        }
+
+        .move-box:hover::before {
+            content: "paused";
+        }
+        .panel-box:hover::before {
+            content: "paused";
+        }
+        @keyframes panel{
+            0%{
+                background-color: dodgerblue;
+                width: 100px;
+            }
+            100%{
+                background-color: yellowgreen;
+                width: 90%;    
+            }
+        }
+
+        @keyframes movemove {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(200px, 0);
+            }
+
+            50% {
+                transform: translate(200px, 200px);
+            }
+
+            75% {
+                transform: translate(0, 200px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel-box"></div>
+    <div class="move-box"></div>
+
+</body>
+
+</html>
